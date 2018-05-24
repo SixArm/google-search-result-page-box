@@ -1,0 +1,1 @@
+sed -e 's#.*<span data-original-name=[^>]*>\([^<]*\).* href="\([^"]*.wikipedia.org/[^\#"]*\).*>Address</a>: </span><span [^>]*>\([^<]*\).*data-number="\([^"]*\)" data-pstn-out-call-url=.*>Website: </span><span [^>]*>\([^<]*\).*#\1\t\2\t\3\t\4\t\5#' -e 'tx' -e 'd' -e ':x'
